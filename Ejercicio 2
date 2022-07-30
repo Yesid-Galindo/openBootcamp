@@ -1,9 +1,16 @@
+import java.util.Scanner;
+
+
 public class Main {
     public static void main(String[] args) {
 
     //Ejercicio 1
+
         System.out.println("Ejercicio 1.");
-        int numero = 1;
+        Scanner num = new Scanner(System.in);
+        System.out.println("Ingrese un numero: ");
+
+        int numero = num.nextInt();
 
         if (numero==0) {
             System.out.println("el numero es 0.");
@@ -36,8 +43,10 @@ public class Main {
         }
     //ejercico 5
         System.out.println("Ejercicio 5.");
+        Scanner esta = new Scanner(System.in);
+        System.out.println("Ingrese una estacion del año:  ");
 
-        String estacion = "otoño";
+        String estacion = esta.next();
 
         switch (estacion){
 
