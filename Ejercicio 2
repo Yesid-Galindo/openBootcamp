@@ -1,0 +1,67 @@
+import java.text.BreakIterator;
+
+public class Main {
+    public static void main(String[] args) {
+
+    //Ejercicio 1
+        System.out.println("Ejercicio 1.");
+        int numero = 1;
+
+        if (numero==0) {
+            System.out.println("el numero es 0.");
+        }else if(numero>0) {
+            System.out.println("el numero es positivo.");
+        }else {
+                    System.out.println("el numero es negativo.");
+                }
+    // ejercicio 2
+        System.out.println("Ejercicio 2.");
+        int i =0;
+
+        while(i<=2) {
+            System.out.println(i);
+            i++;
+        }
+        //Ejercicio 3
+        System.out.println("Ejercicio 3.");
+
+        int j =2;
+        do{
+            System.out.println(j);
+            j++;
+        }while (j<=2);
+    //ejercicio 4
+        System.out.println("Ejercicio 4.");
+
+        for(i=0;i<=3;i++){
+            System.out.println("el numero es : " + i);
+        }
+    //ejercico 5
+        System.out.println("Ejercicio 5.");
+
+        String estacion = "otoño";
+
+        switch (estacion){
+
+            case "verano":
+                System.out.println("Estamos en Verano");
+                break;
+
+            case "otoño":
+                System.out.println("Estamos en Otoño");
+                break;
+
+            case "invierno":
+                System.out.println("Estamos en Invierno");
+                break;
+
+            case "primavera":
+                System.out.println("Estamos en Primavera");
+                break;
+
+            default:
+                System.out.println("Estacion invalida");
+        }
+
+            }
+        }
