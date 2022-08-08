@@ -1,0 +1,43 @@
+
+//creamos paquete
+package com.bootcamp;
+//creamos la clase
+public class HolaMundo {
+//creamos metodo main
+    public static void main(String[] args) {
+        //Tipos de datos
+
+        //1 enteros:
+        byte variable1 = 10;
+        short variable2 = 27;
+        int variable3 = 36;
+        long variable4 = 3212412;
+
+        //1.1 flotantes
+        float variable5 = 25.5f;
+        double variable6 = 100.8;
+
+        //2. Booleanos
+
+        boolean variable7 = true;
+        boolean variable8 = false;
+
+        //3. Texto
+        char variable9 = 'y';
+        String nombre = "Yesid";
+        
+        //Imprimimos los valores de cada variable
+        System.out.println("byte "+ variable1);
+        System.out.println("short "+ variable2);
+        System.out.println("int "+variable3);
+        System.out.println("long "+variable4);
+        System.out.println("float "+variable5);
+        System.out.println("double "+variable6);
+        System.out.println("boolean "+variable7);
+        System.out.println("boolean "+variable8);
+        System.out.println("cararter "+variable9);
+        System.out.println("String "+nombre);
+
+
+    }
+}
