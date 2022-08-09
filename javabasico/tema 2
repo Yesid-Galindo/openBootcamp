@@ -1,0 +1,14 @@
+
+package com.bootcamp;
+
+public class Funciones {
+//creamos metodo main
+    public static void main(String[] args) {
+        //Funciones
+        int precioTotal=precioConIva(1000, 15);
+        System.out.println("El precio a pagar es :" + precioTotal);
+    }
+    static int precioConIva(int precio, int iva){
+        return  (precio * iva)+precio;
+    }
+}
