@@ -5,10 +5,11 @@ public class Funciones {
 //creamos metodo main
     public static void main(String[] args) {
         //Funciones
-        int precioTotal=precioConIva(1000, 15);
+        double precioTotal=precioConIva(1000, 0.15);
         System.out.println("El precio a pagar es :" + precioTotal);
     }
-    static int precioConIva(int precio, int iva){
+    static double
+    precioConIva(int precio, double iva){
         return  (precio * iva)+precio;
     }
 }
