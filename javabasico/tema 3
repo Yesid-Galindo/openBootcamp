@@ -1,0 +1,17 @@
+
+//creamos paquete
+package com.bootcamp;
+//creamos la clase
+public class bucles {
+//creamos metodo main
+    public static void main(String[] args) {
+        String[] frase={"hola ","buenos ","dias."};
+     //Recorremos el Array y lo imprimimos en consola
+        for(int i=0;i<frase.length;i++){
+
+            System.out.println(frase[i]);
+            
+        }
+
+    }
+}
