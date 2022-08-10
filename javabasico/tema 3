@@ -9,7 +9,7 @@ public class bucles {
      //Recorremos el Array y lo imprimimos en consola
         for(int i=0;i<frase.length;i++){
 
-            System.out.println(frase[i]);
+            System.out.print(frase[i]);
             
         }
 
