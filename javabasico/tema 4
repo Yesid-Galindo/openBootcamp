@@ -1,0 +1,86 @@
+package poo.clases;
+
+import poo.herencia.SmartPhone;
+
+public class main {
+    public static void main(String[] args) {
+        SmartPhone sansumg = new SmartPhone("samsung","galaxy",128d,2021,
+                7.0,3500d,8,"snapdragon",4,17);
+
+        System.out.println("fabricante: "+ sansumg.fabricante);
+        System.out.println(sansumg.modelo);
+        System.out.println(sansumg.capacidad);
+        System.out.println(sansumg.año);
+        System.out.println(sansumg.pulgadas);
+        System.out.println(sansumg.bateria);
+        System.out.println(sansumg.memoria);
+        System.out.println(sansumg.procesador);
+        System.out.println(sansumg.camaras);
+        System.out.println(sansumg.tamaño);
+        SmartPhone iphone =new SmartPhone("iphone","i11",256d,2021,
+                6.2,3000d,4,"bionic A14",4,17d);
+        SmartWatch reloj = new SmartWatch("Samsung","S21",0d,2020,1.2,800d,"cuero");
+
+
+
+    }
+}
+public class SmartDevice {
+    public String fabricante;
+    public String modelo;
+    public Double capacidad;
+    public int año;
+    public Double pulgadas;
+    public Double bateria;
+
+    public SmartDevice() {
+
+    }
+
+    public SmartDevice(String fabricante, String modelo, Double capacidad, int año, Double pulgadas, Double bateria) {
+        this.fabricante = fabricante;
+        this.modelo = modelo;
+        this.capacidad = capacidad;
+        this.año = año;
+        this.pulgadas = pulgadas;
+        this.bateria = bateria;
+    }
+
+}
+public class SmartPhone extends SmartDevice {
+    // atributos
+
+    public int memoria;
+    public String procesador;
+    public int camaras;
+    public double tamaño;
+    //constructor
+
+    public void SmarPhone(){
+
+    }
+
+    public SmartPhone(String fabricante, String modelo, Double capacidad, int año, Double pulgadas, Double bateria, int memoria, String procesador, int camaras, double tamaño) {
+        super(fabricante, modelo, capacidad, año, pulgadas, bateria);
+        this.memoria = memoria;
+        this.procesador = procesador;
+        this.camaras = camaras;
+        this.tamaño = tamaño;
+    }
+
+    public SmartPhone(int memoria, String procesador, int camaras, double tamaño) {
+        this.memoria = memoria;
+        this.procesador = procesador;
+        this.camaras = camaras;
+        this.tamaño = tamaño;
+    }
+}
+public class SmartWatch extends SmartDevice{
+    public String correa;
+
+    public SmartWatch(String fabricante, String modelo, Double capacidad, int año, Double pulgadas, Double bateria, String correa) {
+        super(fabricante, modelo, capacidad, año, pulgadas, bateria);
+        this.correa = correa;
+    }
+
+}
